@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public UnityEvent Landed;
     public UnityEvent Dead;
+    public Animator animator;
 
     [SerializeField] private float _jumpForce;
     [SerializeField] private ContactFilter2D _platform;
@@ -23,6 +24,15 @@ public class PlayerController : MonoBehaviour
     {
         if (_isOnPlatform == true)
             _rigidbody.AddForce(Vector2.up * _jumpForce, ForceMode2D.Impulse);
+        
+        /*if (_isOnPlatform == false)
+        {
+            animator.SetBool('Jumping', true);
+        }
+        else 
+        {
+            animator.SetBool('Jumping', false);
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
