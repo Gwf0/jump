@@ -90,6 +90,7 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   animator: {fileID: 0}
+  effect: {fileID: 0}
   _jumpForce: 10
   _platform:
     useTriggers: 0

@@ -26,11 +26,11 @@ public class Buy : MonoBehaviour
 
     public void BuySkins()
     {
-        if(MoneyText.Coin >= 5)
+        if(MoneyText.Coin >= 100)
         {
-            MoneyText.Coin -= 5;
+            MoneyText.Coin -= 100;
             PlayerPrefs.SetInt("coins", MoneyText.Coin);
-            BuySkin = 2;
+            BuySkin = 100;
             PlayerPrefs.GetInt("BuySkin", BuySkin);
         }
         

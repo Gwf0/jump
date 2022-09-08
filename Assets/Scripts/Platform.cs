@@ -9,6 +9,7 @@ public class Platform : MonoBehaviour
     private GameObject _player;
     private int _moveDirection;
     private bool _hasToMove = true;
+    
 
     private void Awake()
     {
