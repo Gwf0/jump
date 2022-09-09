@@ -19,4 +19,12 @@ public class MoneyText : MonoBehaviour
         Coin = PlayerPrefs.GetInt("coins");
         text.text = Coin.ToString();
     }
+
+    public static void addCoins() {
+        Coin +=2;
+        PlayerPrefs.SetInt("coins", Coin);
+        if(Coin ==  null) {
+            Coin = 0;
+        }
+    }
 }
