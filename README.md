@@ -2,4 +2,4 @@
 
 Mobile game made with unity
 
-![image]([https://github.com/Gwf0/jump/blob/main/gif-jump.gif])
+<p><img align="center" src="https://github.com/Gwf0/jump/blob/main/gif-jump.gif" width="500" height="320" /></p>
